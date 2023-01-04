@@ -14,12 +14,7 @@
 
 </head>
 <body>
-<%! String name = "";
-    String password = "";
-%>
 <%  if(request.getMethod().equals("POST")) {
-    name = request.getParameter("name");
-    password = request.getParameter("password");
     request.getRequestDispatcher("/successfully_registration.jsp").forward(request, response);
 }%>
 
